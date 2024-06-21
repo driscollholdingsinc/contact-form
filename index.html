@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Enter Business Information</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -37,7 +37,7 @@
             font-weight: 700;
             color: #333;
         }
-        input, textarea {
+        input {
             width: 100%;
             padding: 12px;
             margin-bottom: 20px;
@@ -47,7 +47,7 @@
             font-size: 16px;
             font-family: 'Roboto', sans-serif;
         }
-        input:focus, textarea:focus {
+        input:focus {
             border-color: #0072ff;
             outline: none;
             box-shadow: 0 0 8px rgba(0, 114, 255, 0.1);
@@ -73,19 +73,22 @@
 </head>
 <body>
     <div class="container">
-        <h2>Contact Form</h2>
+        <h2>Enter Business Information</h2>
         <form action="https://formsubmit.co/nicholasd@driscollholdingsinc.onmicrosoft.com" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="business-name">Business Name:</label>
+            <input type="text" id="business-name" name="business_name" required>
 
-            <label for="email">Your Email:</label>
+            <label for="revenue">Revenue:</label>
+            <input type="text" id="revenue" name="revenue" required>
+
+            <label for="years-in-business">Years in Business:</label>
+            <input type="number" id="years-in-business" name="years_in_business" required>
+
+            <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phone">Your Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
             <input type="submit" value="Submit">
         </form>
